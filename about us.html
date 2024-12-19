@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Bag Bags</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .highlight {
+            color: #e91e63;
+            font-weight: bold;
+        }
+        .testimonials, .timeline, .cta {
+            text-align: center;
+        }
+        .testimonial {
+            font-style: italic;
+            margin: 20px 0;
+            color: #444;
+        }
+        .timeline ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .timeline li {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+        .cta button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cta button:hover {
+            background-color: #d81b60;
+        }
+        .newsletter input, .newsletter button {
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .newsletter input {
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .newsletter button {
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .newsletter button:hover {
+            background-color: #d81b60;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #555;
+        }
+        .social-icons a:hover {
+            color: #e91e63;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .about-section, .team-section, .mission-section, .contact-section {
+            background-color: #fff;
+            padding: 40px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        p {
+            color: #555;
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .highlight {
+            color: #e91e63;
+            font-weight: bold;
+        }
+        .team-grid {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .team-member {
+            text-align: center;
+            max-width: 200px;
+        }
+        .team-member img {
+            width: 100%;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .team-member h3 {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        .contact-section a {
+            color: #e91e63;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Bag Bags</h1>
+    </header>
+    <div class="container">
+        <!-- About Section -->
+        <section class="section">
+            <h2>About Us</h2>
+            <p>
+                At <span class="highlight">Bag Bags</span>, we believe in redefining convenience and style with our exclusive range of bags.
+                From chic handbags to durable travel gear, we cater to all your carrying needs with a touch of elegance and functionality.
+            </p>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials">
+            <h2>What Our Customers Say</h2>
+            <p class="testimonial">"Bag Bags has completely transformed my travel experience. Stylish and sturdy!"</p>
+            <p class="testimonial">"Affordable and elegant......</p>
+        </section>
+
+        <!-- Timeline -->
+        <section class="section timeline">
+            <h2>Our Journey</h2>
+            <ul>
+                <li>2015: Bag Bags was founded with a vision to redefine bags.</li>
+                <li>2018: Launched our first eco-friendly collection.</li>
+                <li>2022: Served over 1 million happy customers worldwide.</li>
+            </ul>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section cta">
+            <h2>Ready to Explore?</h2>
+            <p>Discover our latest collection and find the perfect bag for your journey.</p>
+            <button onclick="window.location.href='/shop'">Shop Now</button>
+        </section>
+
+        <!-- Newsletter Subscription -->
+        <section class="section newsletter">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+            <input type="email" placeholder="Enter your email" required>
+            <button>Subscribe</button>
+        </section>
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 1">
+                    <h3>AQEEL RAZA</h3>
+                    <p>CEO & Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 2">
+                    <h3>AYAN KHAN</h3>
+                    <p>Creative Director</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Team Member 3">
+                    <h3>HASNAIN KHAN</h3>
+                    <p>Marketing Head</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+
+
+        <!-- Social Media Links -->
+        <section class="section social-icons">
+            <h2>Follow Us</h2>
+            <a href="https://facebook.com" target="_blank">🌐 Facebook</a>
+            <a href="https://twitter.com" target="_blank">🌐 Twitter</a>
+            <a href="https://instagram.com" target="_blank">🌐 Instagram</a>
+        </section>
+                <!-- Contact Section -->
+                <section class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>
+                        We'd love to hear from you! Feel free to reach out to us with any questions or feedback.
+                    </p>
+                    <p>Email: <a href="mailto:contact@bagbags.com">contact@bagbags.com</a></p>
+                    <p>Phone: +923152098-104</p>
+                </section>
+        
+    </div>
+
+</body>
+</html>
+
